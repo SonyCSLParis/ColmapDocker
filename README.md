@@ -1,4 +1,4 @@
-### Dockerfile for deeplearning using colmap
+### Dockerfile for deep learning using colmap
 
 #### List of commands:
 
@@ -19,12 +19,9 @@ or
 `docker stop radis`
 
 
-> you can get container id with following command
-> `docker ps`
+> Get container id : `docker ps`
 
-> List all docker images
-> `docker images`
+> List all docker images : `docker images`
 
-> Remove Docker image
-> `docker rmi IMAGE_ID`
-> You will get image id when you list all images
+> Remove Docker image : `docker rmi IMAGE_ID`
+> List all images to get image id.
