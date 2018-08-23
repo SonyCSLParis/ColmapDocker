@@ -1,5 +1,5 @@
 # Define Base Image
-FROM nvidia/cudia
+FROM nvidia/cuda
 
 # Install dependencies
 
@@ -30,7 +30,7 @@ WORKDIR /opt
 RUN apt-get install -y libatlas-base-dev libsuitesparse-dev libgoogle-glog-dev libeigen3-dev libsuitesparse-dev
 RUN git clone https://ceres-solver.googlesource.com/ceres-solver
 RUN cd ceres-solver
-WORkDIR /opt/ceres-solver
+WORKDIR /opt/ceres-solver
 RUN mkdir build
 RUN cd build
 WORKDIR /opt/ceres-solver/build
